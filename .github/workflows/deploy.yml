@@ -24,11 +24,11 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
       - name: Check required files
-        run: test -f index.html && test -f Mohamed_Younes_CV_EN.pdf
+        run: for f in index.html Mohamed_Younes_CV_EN.pdf og-image.png robots.txt sitemap.xml; do test -f "$f" || { echo "Missing $f"; exit 1; }; done
       - name: Package site
         run: |
           mkdir _site
-          cp index.html Mohamed_Younes_CV_EN.pdf _site/
+          cp index.html Mohamed_Younes_CV_EN.pdf og-image.png robots.txt sitemap.xml _site/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
