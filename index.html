@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mohamed Younes – Full-stack & DevOps Engineer</title>
+<meta name="description" content="Final-year computer engineering student at ENSIT (Tunis) building microservices, REST APIs, Angular apps and CI/CD pipelines. Seeking a 6-month PFE internship from February 2027.">
+<meta property="og:title" content="Mohamed Younes – Full-stack & DevOps Engineer">
+<meta property="og:description" content="Microservices, Angular, Docker and CI/CD. Seeking a PFE internship from February 2027.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛠️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#EEF2F6;--surface:#fff;--ink:#0F2A3D;--muted:#51667A;--line:#CBD6E0;--accent:#2F5BEA;--accent-ink:#fff;--ok:#1F9D7F;
+--display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;--body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E1A26;--surface:#152433;--ink:#E6EEF5;--muted:#93A8BB;--line:#263B4F;--accent:#7FA0FF;--accent-ink:#0E1A26;--ok:#4CD0AC}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--body)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+header.nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+.nav b{font:700 1.05rem var(--display)}
+.nav nav{display:flex;gap:22px;font-size:.95rem}
+.nav nav a{text-decoration:none;color:var(--muted)}
+.nav nav a:hover{color:var(--ink)}
+h1,h2,h3{font-family:var(--display);line-height:1.1;margin:0}
+h1{font-size:clamp(2.4rem,6vw,4.4rem);font-weight:800;letter-spacing:-.025em}
+h2{font-size:clamp(1.7rem,3.5vw,2.3rem);font-weight:700;letter-spacing:-.015em;margin-bottom:28px}
+h3{font-size:1.25rem;font-weight:700}
+section{padding:72px 0;border-top:1px solid var(--line)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;padding:72px 0}
+.hero p.lead{font-size:1.2rem;color:var(--muted);max-width:34em;margin:22px 0 30px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:8px;font-weight:500;text-decoration:none;border:1.5px solid var(--ink)}
+.btn.main{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn:hover{transform:translateY(-1px)}
+.topo{width:100%;height:auto}
+.topo .node{fill:var(--surface);stroke:var(--line);stroke-width:1.5}
+.topo .gw{stroke:var(--accent);stroke-width:2}
+.topo text{font:500 13px var(--body);fill:var(--ink)}
+.topo .sub{font-size:10.5px;fill:var(--muted)}
+.topo .edge{fill:none;stroke:var(--accent);stroke-width:1.6;stroke-dasharray:5 6;opacity:.75;animation:flow 1.6s linear 4}
+.topo .dot{fill:var(--ok)}
+@keyframes flow{to{stroke-dashoffset:-44}}
+.cap{font-size:.85rem;color:var(--muted);margin:10px 0 0}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.about p{margin:0 0 16px}
+.facts{margin:0;padding:0;list-style:none;border-left:3px solid var(--accent);padding-left:20px}
+.facts li{margin-bottom:14px}
+.facts span{display:block;color:var(--muted);font-size:.9rem}
+.tl{margin:0;padding:0;list-style:none;border-left:2px solid var(--line);margin-left:6px}
+.tl li{position:relative;padding:0 0 38px 30px}
+.tl li::before{content:"";position:absolute;left:-8px;top:8px;width:14px;height:14px;border-radius:50%;background:var(--accent);border:3px solid var(--bg)}
+.meta{color:var(--muted);font-size:.95rem;margin:4px 0 12px}
+ul.b{margin:0;padding-left:20px}
+ul.b li{margin-bottom:6px}
+.feat{background:var(--ink);color:var(--bg);border-radius:14px;padding:36px;margin-bottom:24px}
+.feat .meta,.feat .tags{color:color-mix(in srgb,var(--bg) 70%,transparent)}
+.feat a{color:var(--bg)}
+.pgrid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.proj{border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:28px}
+.tags{font-size:.9rem;color:var(--muted);margin-top:16px}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.skills h3{font-size:1.05rem;margin-bottom:10px}
+.skills p{margin:0;color:var(--muted)}
+.edu{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.contact{text-align:left}
+.contact .big{font:700 clamp(1.5rem,4vw,2.6rem)/1.2 var(--display);word-break:break-word}
+.links{display:flex;gap:24px;flex-wrap:wrap;margin-top:24px}
+footer{padding:28px 0;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+@media (max-width:820px){.hero,.about,.pgrid,.skills,.edu{grid-template-columns:1fr}.nav nav{gap:14px;font-size:.88rem}.feat{padding:24px}}
+@media (max-width:520px){.nav nav a:nth-child(n+4){display:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.topo .edge{animation:none}.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap"><b>Mohamed Younes</b>
+<nav aria-label="Main"><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav></div></header>
+
+<main>
+<div class="wrap hero">
+ <div>
+  <h1>Full-stack and DevOps engineer, from Angular to Docker.</h1>
+  <p class="lead">I'm Mohamed Younes, a final-year computer engineering student at ENSIT in Tunis. I build microservices, REST APIs and the CI/CD pipelines that ship them. I'm looking for a 6-month PFE internship starting February 2027.</p>
+  <div class="btns"><a class="btn main" href="mailto:mohamed.younes@ensit.u-tunis.tn">Email me</a><a class="btn" href="Mohamed_Younes_CV_EN.pdf" download>Download CV</a></div>
+ </div>
+ <figure style="margin:0">
+  <svg class="topo" viewBox="0 0 520 280" role="img" aria-label="Simplified architecture of the SGAS platform: an Angular frontend calls a gateway, which routes to Eureka, Config Server, a FastAPI forecasting service and PostgreSQL.">
+   <path class="edge" d="M110 132 H160"/>
+   <path class="edge" d="M270 132 C305 132 305 32 340 32"/>
+   <path class="edge" d="M270 132 C305 132 305 102 340 102"/>
+   <path class="edge" d="M270 132 C305 132 305 172 340 172"/>
+   <path class="edge" d="M270 132 C305 132 305 242 340 242"/>
+   <rect class="node" x="0" y="110" width="110" height="44" rx="8"/><text x="14" y="130">Angular 18</text><text class="sub" x="14" y="145">JWT frontend</text>
+   <rect class="node gw" x="160" y="110" width="110" height="44" rx="8"/><text x="174" y="130">Gateway</text><text class="sub" x="174" y="145">Spring Boot</text>
+   <rect class="node" x="340" y="10" width="150" height="44" rx="8"/><text x="354" y="30">Eureka</text><text class="sub" x="354" y="45">service discovery</text>
+   <rect class="node" x="340" y="80" width="150" height="44" rx="8"/><text x="354" y="100">Config Server</text><text class="sub" x="354" y="115">central config</text>
+   <rect class="node" x="340" y="150" width="150" height="44" rx="8"/><text x="354" y="170">Forecast service</text><text class="sub" x="354" y="185">FastAPI · ML</text>
+   <rect class="node" x="340" y="220" width="150" height="44" rx="8"/><text x="354" y="240">PostgreSQL</text><text class="sub" x="354" y="255">data store</text>
+   <circle class="dot" cx="476" cy="22" r="4"/><circle class="dot" cx="476" cy="92" r="4"/><circle class="dot" cx="476" cy="162" r="4"/><circle class="dot" cx="476" cy="232" r="4"/>
+  </svg>
+  <figcaption class="cap">SGAS, the spectrum management platform I built at SFM Technology (simplified).</figcaption>
+ </figure>
+</div>
+
+<section id="about"><div class="wrap about">
+ <div><h2>About</h2>
+  <p>I study computer engineering at ENSIT, and most of my work sits where backend services meet the interface people actually use: Spring Boot and Flask APIs on one side, Angular and Ionic on the other.</p>
+  <p>Lately I've been moving toward the delivery side. I containerise services, write tests, and automate builds with GitHub Actions. My current project adds MLOps and multi-agent AI to that mix.</p></div>
+ <ul class="facts">
+  <li><span>Studying</span>Engineering degree in Computer Engineering, ENSIT, since 2024</li>
+  <li><span>Looking for</span>6-month PFE internship in full-stack or DevOps, from February 2027</li>
+  <li><span>Languages</span>Arabic (native), French (fluent), English (fluent)</li>
+  <li><span>Based in</span>Tunis, Tunisia</li>
+ </ul>
+</div></section>
+
+<section id="experience"><div class="wrap"><h2>Experience</h2>
+ <ol class="tl">
+  <li><h3>Software Engineering Intern, SGAS Platform</h3><p class="meta">SFM Technology, Tunis · Jul 2026 – Sep 2026</p>
+   <ul class="b"><li>Designed an Automated Spectrum Management System compliant with ITU-R SM.1370, built on Spring Boot microservices (Eureka, Config Server, Gateway) with PostgreSQL.</li>
+   <li>Implemented a FastAPI revenue-forecasting ML microservice and a JWT-secured Angular 18 frontend.</li></ul></li>
+  <li><h3>Web Development Intern</h3><p class="meta">Allence Tunisie, Tunis · Jun 2025 – Jul 2025</p>
+   <ul class="b"><li>Built a full-stack user management system (Flask, MongoDB, Angular) with JWT authentication and RBAC.</li>
+   <li>Created a full-stack housing app with listing search, applications and duplicate prevention.</li>
+   <li>Engineered a Book Catalog REST API with pagination, filtering, Pydantic validation and Swagger UI.</li></ul></li>
+ </ol>
+</div></section>
+
+<section id="projects"><div class="wrap"><h2>Projects</h2>
+ <article class="feat">
+  <h3>CardioAgent-Ops: MLOps and multi-agent AI platform</h3>
+  <p class="meta">Ongoing · <a href="https://github.com/MedYounes004/cardioagent-ops" rel="noopener">GitHub repository</a></p>
+  <ul class="b"><li>Architecting a heart sound analysis platform made of 6 Docker microservices, orchestrated with Docker Compose.</li>
+  <li>Established the FastAPI gateway: multi-stage Dockerfile, 94% test coverage and GitHub Actions CI/CD.</li>
+  <li>Benchmarking 5 ML/DL models in the audio engine, with MLflow tracking and ONNX export.</li></ul>
+  <p class="tags">Docker · Docker Compose · FastAPI · GitHub Actions · MLflow · ONNX</p>
+ </article>
+ <div class="pgrid">
+  <article class="proj"><h3>FreelanceHub</h3><p class="meta">Team of 3 · Feb 2026 – May 2026</p>
+   <ul class="b"><li>Cross-platform freelance marketplace connecting clients and freelancers.</li><li>Flask REST API secured with role-based access control and JWT-protected routes.</li><li>16-screen mobile-friendly Angular/Ionic interface with automatic token handling.</li></ul>
+   <p class="tags">Flask · Angular · Ionic · JWT</p></article>
+  <article class="proj"><h3>Smart University App</h3><p class="meta">Feb 2026 – May 2026</p>
+   <ul class="b"><li>University mobile platform with 4 role-based user spaces.</li><li>Integrated a RAG assistant over course materials (ChromaDB) that answers student questions with sources.</li></ul>
+   <p class="tags">Ionic · Angular · Spring Boot · ChromaDB</p></article>
+ </div>
+</div></section>
+
+<section id="skills"><div class="wrap"><h2>Skills</h2>
+ <div class="skills">
+  <div><h3>Languages</h3><p>Java, Python, C/C++, SQL, JavaScript, TypeScript, HTML/CSS</p></div>
+  <div><h3>Frameworks and databases</h3><p>Angular, Ionic, Spring Boot, Flask, FastAPI, PostgreSQL, MongoDB, MySQL</p></div>
+  <div><h3>DevOps and ML</h3><p>Docker, Docker Compose, GitHub Actions, Pytest, Git, MLflow, ONNX Runtime, PyTorch</p></div>
+ </div>
+</div></section>
+
+<section id="education"><div class="wrap"><h2>Education and certifications</h2>
+ <div class="edu">
+  <div><h3>ENSIT, Tunis</h3><p class="meta">Engineering Degree in Computer Engineering · Sep 2024 – present</p>
+   <h3 style="margin-top:22px">IPEIK, Kairouan</h3><p class="meta">Preparatory Cycle in Mathematics and Physics · Sep 2022 – Jun 2024</p></div>
+  <div><h3>Certifications</h3><ul class="b" style="margin-top:10px"><li>AWS Academy: Cloud, ML Foundations</li><li>Cisco Academy: CCNA courses</li></ul></div>
+ </div>
+</div></section>
+
+<section id="contact"><div class="wrap contact"><h2>Contact</h2>
+ <a class="big" href="mailto:mohamed.younes@ensit.u-tunis.tn">mohamed.younes@ensit.u-tunis.tn</a>
+ <div class="links"><a href="tel:+21626239299">+216 26 239 299</a><a href="https://www.linkedin.com/in/mohamed-younes-3a6465331" rel="noopener">LinkedIn</a><a href="https://github.com/MedYounes004" rel="noopener">GitHub</a><a href="Mohamed_Younes_CV_EN.pdf" download>CV (PDF)</a></div>
+</div></section>
+</main>
+<footer><div class="wrap">© 2026 Mohamed Younes</div></footer>
+</body>
+</html>
